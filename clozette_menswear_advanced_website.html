@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Clozette Menswear — modern men's fashion, curated for every occasion.">
+<meta name="theme-color" content="#111">
+<title>Clozette Menswear | Men's Fashion</title>
+<style>
+:root{--black:#111;--cream:#f6f4ef;--white:#fff;--gray:#686868;--line:#dedbd4;--gold:#b8955d;--max:1200px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--black);line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{width:min(92%,var(--max));margin:auto}
+.top{background:#111;color:#fff;text-align:center;padding:8px;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+nav{height:76px;position:sticky;top:0;z-index:50;background:#f6f4eff2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 27px Georgia,serif;letter-spacing:.02em}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:28px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.navlinks a:hover{color:var(--gold)}.navcta{background:#111;color:#fff;padding:12px 18px;border-radius:3px;font-size:12px}
+.menu{display:none;border:0;background:none;font-size:27px}
+.hero{min-height:680px;background:linear-gradient(90deg,#000c,#0001),url('https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=2000&q=85') center/cover;display:flex;align-items:center}
+.heroText{color:#fff;padding:90px 0;max-width:680px}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#ddd;margin-bottom:18px}
+h1{font:700 clamp(48px,7vw,88px)/.95 Georgia,serif}.heroText p{font-size:17px;color:#eee;max-width:550px;margin:24px 0 32px}
+.btn{display:inline-block;padding:14px 23px;border:1px solid #fff;margin-right:8px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.btn.light{background:#fff;color:#111}.btn.dark{background:#111;border-color:#111;color:#fff}
+section{padding:88px 0}.heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}.kicker{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.2em;text-transform:uppercase}.heading h2{font:700 clamp(35px,5vw,54px)/1.05 Georgia,serif;margin-top:7px}.heading p{color:var(--gray);max-width:460px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.category{height:330px;background-size:cover;background-position:center;position:relative;display:flex;align-items:end;overflow:hidden}.category:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,#000b)}
+.category div{position:relative;z-index:2;color:#fff;padding:24px}.category h3{font:600 28px Georgia,serif}.category p{font-size:12px;color:#ddd;margin-top:3px}
+.cat1{background-image:url('https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=900&q=80')}.cat2{background-image:url('https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=80')}.cat3{background-image:url('https://images.unsplash.com/photo-1598808503746-f34c53b9323e?auto=format&fit=crop&w=900&q=80')}.cat4{background-image:url('https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=900&q=80')}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);overflow:hidden}.productImg{aspect-ratio:4/5;background:center/cover}.pr1{background-image:url('https://images.unsplash.com/photo-1626497764746-6dc36546b388?auto=format&fit=crop&w=800&q=80')}.pr2{background-image:url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80')}.pr3{background-image:url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80')}.pr4{background-image:url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80')}
+.info{padding:17px}.badge{font-size:10px;color:var(--gold);letter-spacing:.16em;text-transform:uppercase;font-weight:bold}.info h3{font:600 21px Georgia,serif;margin:5px 0}.info p{font-size:13px;color:var(--gray)}.enquire{display:inline-block;margin-top:11px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.darkSection{background:#151515;color:#fff}.darkSection p{color:#bdbdbd}.story{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.story h2{font:700 clamp(38px,5vw,58px)/1.05 Georgia,serif;margin-top:8px}.storyText>p{margin:22px 0;max-width:590px}.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.point{border:1px solid #383838;padding:18px}.point b{display:block}.point span{font-size:12px;color:#999}
+.banner{background:url('https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1800&q=80') center/cover;min-height:420px;display:grid;place-items:center;text-align:center;color:#fff;position:relative}.banner:before{content:"";position:absolute;inset:0;background:#0008}.bannerIn{position:relative;z-index:1}.banner h2{font:700 clamp(38px,6vw,68px) Georgia,serif}.banner p{margin:12px auto 25px;color:#eee}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:#fff;border:1px solid var(--line);padding:30px}.card h3{font:600 29px Georgia,serif;margin-bottom:12px}.card p{color:var(--gray);margin:7px 0}.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.social{border:1px solid var(--line);padding:10px 15px;font-size:12px}
+footer{background:#111;color:#999;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#fff}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-weight:800;z-index:100;box-shadow:0 8px 28px #0004}
+.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.navlinks,.navcta{display:none}.menu{display:block}.grid4,.products{grid-template-columns:repeat(2,1fr)}.story,.contact{grid-template-columns:1fr}.hero{min-height:590px}}
+@media(max-width:520px){section{padding:62px 0}.grid4,.products{grid-template-columns:1fr}.category{height:270px}.heading{display:block}.heading p{margin-top:12px}.points{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top">CLOZETTE MENSWEAR • MEN'S FASHION • NEW COLLECTION</div>
+<nav><div class="wrap navin">
+<a href="#" class="logo">Clozette<span>Menswear</span></a>
+<div class="navlinks"><a href="#collections">Collections</a><a href="#arrivals">New Arrivals</a><a href="#story">About</a><a href="#contact">Contact</a></div>
+<a href="#contact" class="navcta">Enquire Now</a><button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+</div></nav>
+
+<header class="hero"><div class="wrap heroText">
+<div class="eyebrow">Clozette Menswear</div>
+<h1>Modern style.<br>Made for men.</h1>
+<p>Discover refined everyday essentials, smart casual looks and statement pieces curated for the modern wardrobe.</p>
+<a class="btn light" href="#arrivals">Shop Collection</a>
+<a class="btn" href="https://www.instagram.com/_clozette_menswear/" target="_blank" rel="noopener">Instagram ↗</a>
+</div></header>
+
+<section id="collections" class="reveal"><div class="wrap">
+<div class="heading"><div><div class="kicker">Explore</div><h2>Shop by category</h2></div><p>Build your store around the categories you actually sell. The sample sections below can be renamed and updated with your real inventory.</p></div>
+<div class="grid4">
+<a class="category cat1" href="#arrivals"><div><h3>Shirts</h3><p>Everyday to elevated</p></div></a>
+<a class="category cat2" href="#arrivals"><div><h3>Jackets</h3><p>Layers with attitude</p></div></a>
+<a class="category cat3" href="#arrivals"><div><h3>T-Shirts</h3><p>Essential everyday fits</p></div></a>
+<a class="category cat4" href="#arrivals"><div><h3>Formal Edit</h3><p>Sharp looks for occasions</p></div></a>
+</div></div></section>
+
+<section id="arrivals" class="reveal"><div class="wrap">
+<div class="heading"><div><div class="kicker">Fresh drops</div><h2>New arrivals</h2></div><p>Replace these sample cards with actual product photos, names, sizes, colours and prices from the store.</p></div>
+<div class="products">
+<article class="product"><div class="productImg pr1"></div><div class="info"><span class="badge">New</span><h3>Premium Casual Shirt</h3><p>Smart everyday styling</p><a class="enquire" href="#contact">Enquire →</a></div></article>
+<article class="product"><div class="productImg pr2"></div><div class="info"><span class="badge">Trending</span><h3>Classic Formal Shirt</h3><p>Clean, polished and versatile</p><a class="enquire" href="#contact">Enquire →</a></div></article>
+<article class="product"><div class="productImg pr3"></div><div class="info"><span class="badge">Featured</span><h3>Signature Overshirt</h3><p>Modern layered look</p><a class="enquire" href="#contact">Enquire →</a></div></article>
+<article class="product"><div class="productImg pr4"></div><div class="info"><span class="badge">New</span><h3>Occasion Edit</h3><p>Designed to stand out</p><a class="enquire" href="#contact">Enquire →</a></div></article>
+</div></div></section>
+
+<section id="story" class="darkSection reveal"><div class="wrap story">
+<div><div class="kicker">About the brand</div><h2>Good clothes.<br>Strong presence.</h2></div>
+<div class="storyText"><p>Clozette Menswear is presented here as a modern men's fashion destination. Add the owner's real brand story, location, years of experience and product specialities before publishing.</p>
+<a class="btn light" href="https://www.instagram.com/_clozette_menswear/" target="_blank" rel="noopener">Follow Instagram</a>
+<div class="points"><div class="point"><b>Curated Styles</b><span>Fresh looks for different occasions.</span></div><div class="point"><b>Easy Enquiry</b><span>Customers can ask about stock and sizes.</span></div><div class="point"><b>Store Experience</b><span>Add verified location and opening hours.</span></div><div class="point"><b>Social Connect</b><span>Keep the website linked to Instagram.</span></div></div>
+</div></div></section>
+
+<section class="banner reveal"><div class="bannerIn"><div class="kicker">Your next look</div><h2>Dress the way you mean it.</h2><p>Explore the latest collection and connect with Clozette Menswear.</p><a class="btn light" href="#contact">Get in touch</a></div></section>
+
+<section id="contact" class="reveal"><div class="wrap">
+<div class="heading"><div><div class="kicker">Contact</div><h2>Visit. Enquire. Connect.</h2></div><p>Before going live, replace the placeholder contact information with the business owner's verified details.</p></div>
+<div class="contact">
+<div class="card"><h3>Clozette Menswear</h3><p>📍 Add verified store address here</p><p>📞 Add verified phone / WhatsApp here</p><p>🕒 Add verified opening hours here</p><div class="socials"><a class="social" href="https://www.instagram.com/_clozette_menswear/" target="_blank" rel="noopener">Instagram ↗</a><a class="social" href="tel:+910000000000">Call</a></div></div>
+<div class="card"><h3>Quick enquiry</h3><p>Ask about sizes, colours, availability, new arrivals or store timings.</p><br><a class="btn dark" href="https://wa.me/?text=Hello%20Clozette%20Menswear%2C%20I%20want%20to%20know%20about%20your%20latest%20collection." target="_blank" rel="noopener">WhatsApp Us</a></div>
+</div></div></section>
+
+<footer><div class="wrap foot"><div>© <span id="year"></span> <strong>Clozette Menswear</strong>. All rights reserved.</div><div>Men's Fashion • Style • Collection</div></div></footer>
+<a class="whatsapp" href="https://wa.me/?text=Hello%20Clozette%20Menswear%2C%20I%20want%20to%20know%20about%20your%20latest%20collection." target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
+</script>
+</body></html>
